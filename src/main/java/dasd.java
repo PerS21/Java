@@ -67,10 +67,7 @@ class HttpURLConnectionExample {
         //print result
         System.out.println(response.toString());
 
-//        request = Unirest.get(apiHost + apiMethod);
-//        getParameters.forEach((key, value) -> request.routeParam(key, value.toString()));
-//        GetRequest getRequest = request.headers(headers).basicAuth(login, password);
-//        response = getRequest.asString();
+
 
 
 
@@ -84,20 +81,8 @@ class HttpURLConnectionExample {
         System.out.println(asd.getInfo().getLat());
 
         if (asd.getInfo().getLat().equals(getLat)){
-            System.out.println("zbc");
+            System.out.println("true");
         }
 
-//        JSONObject jsonObj = new JSONObject(response);
-//
-//        System.out.println(jsonObj);
-//
-//        ObjectMapper mapper = new ObjectMapper();
-//        Object request;
-//        HttpResponse<com.fasterxml.jackson.databind.JsonNode> response = request.asJson();
-//        JSONObject jsonObject = mapper.readValue(String.valueOf(response), JSONObject.class);
-//
-////        JSONObject asd = new JSONObject(jsonObject);
-//
-//        System.out.println(jsonObject);
     }
 }
