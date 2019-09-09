@@ -2,7 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="51b0bf18-4afc-45cb-aac6-b818e875544f" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fact.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/Info.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/JSparce.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/dasd.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/dasd.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/HttpURLConnectionExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/HttpURLConnectionExample.class" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -69,10 +74,23 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/dasd.java</url>
+          <line>83</line>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>

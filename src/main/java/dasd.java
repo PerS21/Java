@@ -1,5 +1,6 @@
 
 
+import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.json.JSONObject;
 
@@ -13,7 +14,7 @@ class HttpURLConnectionExample {
     private Object JsonNode;
     private Object JSONObject;
 
-    String getLat = "55.733661";
+    Double getLat = 55.733661;
     String getLon = "37.857681";
     String getLang = "«ru_RU»";
     String getLimit = "2";
@@ -66,11 +67,33 @@ class HttpURLConnectionExample {
         //print result
         System.out.println(response.toString());
 
+//        request = Unirest.get(apiHost + apiMethod);
+//        getParameters.forEach((key, value) -> request.routeParam(key, value.toString()));
+//        GetRequest getRequest = request.headers(headers).basicAuth(login, password);
+//        response = getRequest.asString();
+
+
+
+        ObjectMapper mapper = new ObjectMapper();
+        JSONObject jsonObj = new JSONObject(response);
+        Object mappedResponseEntity = mapper.readValue(response.toString(), JSparce.class);
+        System.out.println(mappedResponseEntity.toString());
+
+        JSparce asd = (JSparce) mappedResponseEntity;
+        asd.getInfo().getLat();
+        System.out.println(asd.getInfo().getLat());
+
+        if (asd.getInfo().getLat().equals(getLat)){
+            System.out.println("zbc");
+        }
+
 //        JSONObject jsonObj = new JSONObject(response);
 //
 //        System.out.println(jsonObj);
 //
 //        ObjectMapper mapper = new ObjectMapper();
+//        Object request;
+//        HttpResponse<com.fasterxml.jackson.databind.JsonNode> response = request.asJson();
 //        JSONObject jsonObject = mapper.readValue(String.valueOf(response), JSONObject.class);
 //
 ////        JSONObject asd = new JSONObject(jsonObject);
